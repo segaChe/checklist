@@ -82,8 +82,7 @@
 	}
 	
 	.menu__item:hover .menu__calendar {
-		right: 10px;
-		
+		left: -10px;
 	}
 	
 }
