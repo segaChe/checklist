@@ -1,0 +1,41 @@
+.menu__calendar {
+	text-align: center;
+}
+
+.menu__calendar .now {
+	/*border: 1px solid #999;*/
+	background-color: blue;
+	color: white;
+}
+
+.menu__calendar__arrow_left {
+	float: left;
+	width: 0;
+	height: 0;
+	border: 10px solid #777;
+	border-left: none;
+	border-top-color: transparent;
+	border-bottom-color: transparent; 
+}
+
+.menu__calendar__arrow_right {
+	float: right;
+	width: 0;
+	height: 0;
+	border: 10px solid #777;
+	border-right: none;
+	border-top-color: transparent;
+	border-bottom-color: transparent; 
+}
+
+.menu__calendar__arrow_left:hover {
+	border-right-color: blue; 
+}
+
+.menu__calendar__arrow_right:hover {
+	border-left-color: blue; 
+}
+
+.menu__calendar_wrap:first-child {
+	text-align: center;
+}

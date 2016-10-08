@@ -1,0 +1,83 @@
+.menu > * {
+	display: inline-block;
+	position: relative;
+	margin: 0 10px;
+}
+
+.menu__item__header {
+	margin: 0.5em 0;
+}
+
+.menu__form, .menu__calendar, .menu__transfer {
+	position: absolute;
+	top: 30px;
+	right: -10px;
+	opacity: 0;
+	border: 1px solid #888;
+	background-color: white; 
+	padding: 10px;
+	transition: 0.5s;
+}
+
+.menu__item:hover .menu__form, .menu__item:hover .menu__calendar, .menu__item:hover .menu__transfer {
+	position: absolute;
+	top: 30px;
+	right: 10%;
+	opacity: 1;
+	z-index: 99;
+	color: black;
+}
+
+.menu__form_item > * {
+	vertical-align: top;
+}
+
+
+.menu__calendar .now {
+	background-color: blue;
+	color: white;
+}
+
+.menu__calendar__arrow_left {
+	float: left;
+	width: 0;
+	height: 0;
+	border: 10px solid #777;
+	border-left: none;
+	border-top-color: transparent;
+	border-bottom-color: transparent; 
+}
+
+.menu__calendar__arrow_right {
+	float: right;
+	width: 0;
+	height: 0;
+	border: 10px solid #777;
+	border-right: none;
+	border-top-color: transparent;
+	border-bottom-color: transparent; 
+}
+
+.menu__calendar__arrow_left:hover {
+	border-right-color: blue; 
+}
+
+.menu__calendar__arrow_right:hover {
+	border-left-color: blue; 
+}
+
+@media screen and (max-width: 530px) {
+	.menu__form, .menu__calendar, .menu__transfer {
+		right: auto;
+		left: 0;
+	}
+	
+	.menu__item:hover .menu__form, .menu__item:hover .menu__calendar, .menu__item:hover .menu__transfer {
+		position: absolute;
+		right: auto;
+		left: 0;
+		opacity: 1;
+		z-index: 99;
+		color: black;
+	}
+}

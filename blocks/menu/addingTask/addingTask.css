@@ -1,0 +1,9 @@
+/*.menu__form {
+	display: none;
+}*/
+
+.notice {
+
+	position: absolute;
+	z-index: 100;
+}

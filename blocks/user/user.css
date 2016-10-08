@@ -1,0 +1,38 @@
+
+.user {
+	background-color: #555;
+	color: white;
+	padding: 0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	width: 50%;
+	min-width: 500px;
+	margin: 0 auto;
+}
+
+.user > * {
+	display: inline-block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.user__signout {
+	margin-left: 25%;
+}
+
+@media screen and (max-width: 530px) {
+	.user {
+		position: relative;
+		margin: 0;
+		padding: 5px 0; 
+		border-bottom-left-radius: 1px;
+		border-bottom-right-radius: 1px;
+		width: 100%;
+	}
+
+	.user > * {
+		margin: 0 10%;
+
+	}
+}

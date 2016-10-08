@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Organizer 2.0</title>
+	<meta charset="utf-8">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="./blocks/auth/authForm.css">
+</head>
+
+<body>
+	<header>
+		<h1>Чек-лист</h1>
+	</header>
+	<div class="entry">
+	
+		<div class="auth_wrap entry__item">
+			<input type="radio" name="entry" id="enter" checked>
+			<label for="enter" class="button entry__item__header">Вход</label>
+	
+			<input type="radio" name="entry" id="register">
+			<label for="register" class="button entry__item__header">Регистрация</label>
+		
+			<form class="form authForm">
+	
+				<div class="form__item">
+					<label for="email_auth">E-mail: </label>
+					<input type="text" name="email_auth" id="email_auth">
+				</div>
+	
+				<div class="form__item">
+					<label for="password_auth">Пароль: </label>
+					<input type="password" name="password_auth" id="password_auth">
+				</div>
+	
+				<button class="button authForm__enter">
+					Войти
+				</button>
+
+			</form>
+
+			<form class="form regForm">
+	
+				<div class="form__item">
+					<label for="email_auth">E-mail: </label>
+					<input type="text" name="email_reg" id="email_reg">
+				</div>
+	
+				<div class="form__item">
+					<label for="password_reg">Пароль: </label>
+					<input type="password" name="password_reg" id="password_reg">
+				</div>
+	
+				<div class="form__item authForm__secondPass">
+					<label for="password2">Повторите пароль: </label>
+					<input type="password" name="password_reg2" id="password_reg2">
+				</div>
+	
+				<button class="button authForm__register">
+					Зарегистрироваться
+				</button>
+			</form>
+
+		</div>
+	</div>
+
+	<!-- Подключить БД на Firebase -->
+	<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyDGKLesiHN_RoFQHezGhHNK7vq7f1eEI1Y",
+	    authDomain: "checklist-6c8c4.firebaseapp.com",
+	    databaseURL: "https://checklist-6c8c4.firebaseio.com",
+	    storageBucket: "checklist-6c8c4.appspot.com",
+	    messagingSenderId: "72538080284"
+	  };
+	  firebase.initializeApp(config);
+	</script>
+
+	<script type="text/javascript" src="./libs/redirect.js"></script>
+	<script type="text/javascript" src="./blocks/auth/authForm.js"></script>
+	<script type="text/javascript" src="./blocks/auth/regForm.js"></script>
+	<script type="text/javascript" src="./blocks/auth/auth.js"></script>
+</body>
+</html>

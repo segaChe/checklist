@@ -1,0 +1,49 @@
+
+.form__item {
+	margin-top: 10px;
+}
+
+.form__item > * {
+	display: block;
+	margin: 5px auto;
+}
+
+.entry {
+	position: relative;
+	top: 5%;
+}
+
+.entry__item {
+	display: block;
+	text-align: center;
+}
+
+.authForm, .regForm {
+	margin: 0 auto;
+	width: 205px;
+}
+
+.entry__item__header {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #999;
+}
+
+#enter:checked + label[for="enter"] {
+	color: black;
+}
+#register:checked + label[for="register"] {
+	color: black;
+}
+
+#enter:checked ~ .regForm, 
+#register:checked ~ .authForm {
+	display: none;
+}
+#register:checked ~ .regForm {
+	display: block;
+}
+
+input[type="radio"] {
+	visibility: hidden;
+}
