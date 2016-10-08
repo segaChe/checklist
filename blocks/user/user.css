@@ -28,7 +28,7 @@
 		padding: 5px 0; 
 		border-bottom-left-radius: 1px;
 		border-bottom-right-radius: 1px;
-		width: 100%;
+		width: auto;
 	}
 
 	.user > * {
