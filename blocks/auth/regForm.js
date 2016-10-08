@@ -1,6 +1,6 @@
 'use strict';
 
-import {AuthForm} from "./authForm";
+//import {AuthForm} from "./authForm";
 
 class RegForm extends AuthForm {
 	constructor(options) {
